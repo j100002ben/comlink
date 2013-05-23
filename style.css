@@ -1,0 +1,33 @@
+body{
+	font-size: 13px;
+	padding: 0;
+	text-decoration: none;
+	font-family: "微軟正黑體","Microsoft JhengHei",Arial;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+.margin-top-none{
+	margin-top: 0px;
+}
+.margin-bottom-none{
+	margin-bottom: 0px;
+}
+
+.margin-top-20{
+	margin-top: 20px;
+}
+.margin-left-20{
+	margin-left: 20px;
+}
+.dashed-hr{
+	border-top: 2px dashed #eeeeee;
+}
+.right-dash-border{
+	border-right: 2px dashed #eeeeee;
+}
+.left-dash-border{
+	border-left: 2px dashed #eeeeee;
+}
+.footer{
+	margin: 20px 0 0 0;
+}
