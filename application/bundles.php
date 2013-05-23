@@ -35,6 +35,9 @@
 
 return array(
 
-	'docs' => array('handles' => 'docs'),
+	'bootstrapper' => array('auto' => true),
+	'form-base-model' => array('auto' => true),
+	'swiftmailer' => array('auto' => true),
+	'sentry' => array('auto' => true),
 
 );
