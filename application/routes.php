@@ -1,40 +1,48 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Simply tell Laravel the HTTP verbs and URIs it should respond to. It is a
-| breeze to setup your application using Laravel's RESTful routing and it
-| is perfectly suited for building large applications and simple APIs.
-|
-| Let's respond to a simple GET request to http://example.com/hello:
-|
-|		Route::get('hello', function()
-|		{
-|			return 'Hello World!';
-|		});
-|
-| You can even respond to more than one URI:
-|
-|		Route::post(array('hello', 'world'), function()
-|		{
-|			return 'Hello World!';
-|		});
-|
-| It's easy to allow URI wildcards using (:num) or (:any):
-|
-|		Route::put('hello/(:any)', function($name)
-|		{
-|			return "Welcome, $name.";
-|		});
-|
-*/
-
 Route::get('/', function()
 {
 	return View::make('home.index');
+});
+
+Route::get('/news', function(){
+	return View::make('news.index');
+});
+
+Route::get('/product', function(){
+	return View::make('product.index');
+});
+
+Route::get('/product_dtl', function(){
+	return View::make('product.detail');
+});
+
+Route::get('/product_list', function(){
+	return View::make('product.list');
+});
+
+Route::get('/brand', function(){
+	return View::make('brand.index');
+});
+
+Route::get('/dott_brand', function(){
+	return View::make('brand.dott');
+});
+
+Route::get('/contact', function(){
+	return View::make('home.contact');
+});
+
+Route::get('/chart', function(){
+	return View::make('home.chart');
+});
+
+Route::get('/buy', function(){
+	return View::make('home.buy');
+});
+
+Route::get('/about_comlink', function(){
+	return View::make('home.about');
 });
 
 /*

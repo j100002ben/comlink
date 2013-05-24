@@ -4,7 +4,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>首頁</title>
+	<title>購買通路</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta http-equiv="x-dns-prefetch-control" content="off">
 	<meta http-equiv="Window-target" content="_top" >
@@ -35,64 +35,29 @@
 				</div>
 			</div>
 		</div>
-		<hr class="dashed-hr"></hr>
 		<div class="main-content">
-			<div class="main-carousel">
-				<div id="myCarousel" class="carousel slide">
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-					<!-- Carousel items -->
-					<div class="carousel-inner">
-						<div class="active item"><img src="http://placekitten.com/940/300" /></div>
-						<div class="item"><img src="http://placekitten.com/940/300" /></div>
-						<div class="item"><img src="http://placekitten.com/940/300" /></div>
-					</div>
-					<!-- Carousel nav -->
-					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-				</div>
-			</div>
-			<hr class="dashed-hr margin-bottom-none"></hr>
-			<div class="row">
-				<div class="span6">
-					<div class="row margin-top-20">
-						<div class="span3">
-							<a href="{{ URL::to('news') }}"><img src="http://placekitten.com/220/150" /></a>
-						</div>
-						<div class="span3">
-							<a href="{{ URL::to('news') }}"><p>這是最新消息cinia odio sem nec elit.……（繼續閱讀）</p></a>
-						</div>
-					</div>
-				</div>
-				<div class="span6">
-					<div class="row margin-top-20">
-						<div class="span3">
-							<a href="{{ URL::to('product_dtl') }}"><img src="http://placekitten.com/220/150" /></a>
-						</div>
-						<div class="span3">
-							<a href="{{ URL::to('product_dtl') }}"><p>這是產品內頁cinia odio sem nec elit.……（繼續閱讀）</p></a>
-						</div>
-					</div>
-				</div>
-			</div>
 			<hr class="dashed-hr"></hr>
-			<div class="row">
-				<div class="span6">
-					<h4>about Comlink</h4>
-					<a href="{{ URL::to('about') }}"><p>Nullam quligula, eget lacinia odio sem nec elit.……（繼續閱讀）</p></a>
-				</div>
-				<div class="span4 offset2">
-					<h4>where to buy</h4>
-					<div class="row">
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
+				<div class="row">
+					<div class="span4">
+						<h2>where to buy</h2>
+					</div>
+					<div class="span8">
+						<div class="row">
+							<div class="span2"><a href="#"><img src="http://placekitten.com/140/127" /></a></div>
+							<div class="span2"><a href="#"><img src="http://placekitten.com/140/127" /></a></div>
+							<div class="span2"><a href="#"><img src="http://placekitten.com/140/127" /></a></div>
+							<div class="span2"><a href="#"><img src="http://placekitten.com/140/127" /></a></div>
+						</div>
 					</div>
 				</div>
+			<hr class="dashed-hr"></hr>
+			<img src="http://placekitten.com/940/200" />
+			<div class="margin-top-20">
+				<ul class="unstyled">
+					<li>台北</li>
+					<li>台中</li>
+					<li>高雄</li>
+				</ul>
 			</div>
 		</div>
 		<div class="footer clearfix">

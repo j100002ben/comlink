@@ -4,7 +4,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>首頁</title>
+	<title>聯絡我們</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta http-equiv="x-dns-prefetch-control" content="off">
 	<meta http-equiv="Window-target" content="_top" >
@@ -37,64 +37,72 @@
 		</div>
 		<hr class="dashed-hr"></hr>
 		<div class="main-content">
-			<div class="main-carousel">
-				<div id="myCarousel" class="carousel slide">
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-					<!-- Carousel items -->
-					<div class="carousel-inner">
-						<div class="active item"><img src="http://placekitten.com/940/300" /></div>
-						<div class="item"><img src="http://placekitten.com/940/300" /></div>
-						<div class="item"><img src="http://placekitten.com/940/300" /></div>
-					</div>
-					<!-- Carousel nav -->
-					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-				</div>
-			</div>
-			<hr class="dashed-hr margin-bottom-none"></hr>
-			<div class="row">
-				<div class="span6">
-					<div class="row margin-top-20">
-						<div class="span3">
-							<a href="{{ URL::to('news') }}"><img src="http://placekitten.com/220/150" /></a>
-						</div>
-						<div class="span3">
-							<a href="{{ URL::to('news') }}"><p>這是最新消息cinia odio sem nec elit.……（繼續閱讀）</p></a>
-						</div>
+			<form class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label" for="type">問題類型</label>
+					<div class="controls">
+						<select name="type">
+							<option>異業合作</option>
+							<option>代理行銷</option>
+							<option>其他（留言處可說明）</option>
+						</select>
 					</div>
 				</div>
-				<div class="span6">
-					<div class="row margin-top-20">
-						<div class="span3">
-							<a href="{{ URL::to('product_dtl') }}"><img src="http://placekitten.com/220/150" /></a>
-						</div>
-						<div class="span3">
-							<a href="{{ URL::to('product_dtl') }}"><p>這是產品內頁cinia odio sem nec elit.……（繼續閱讀）</p></a>
-						</div>
+				<div class="control-group">
+					<label class="control-label" for="name">Name</label>
+					<div class="controls">
+						<input type="text" id="name" placeholder="請輸入您的姓名">
 					</div>
 				</div>
-			</div>
-			<hr class="dashed-hr"></hr>
-			<div class="row">
-				<div class="span6">
-					<h4>about Comlink</h4>
-					<a href="{{ URL::to('about') }}"><p>Nullam quligula, eget lacinia odio sem nec elit.……（繼續閱讀）</p></a>
-				</div>
-				<div class="span4 offset2">
-					<h4>where to buy</h4>
-					<div class="row">
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
+				<div class="control-group">
+					<label class="control-label" for="phone">Phone</label>
+					<div class="controls">
+						<input type="text" id="phone" placeholder="請輸入您的電話號碼">
 					</div>
 				</div>
-			</div>
+				<div class="control-group">
+					<label class="control-label" for="mobilePhone">Mobile Phone</label>
+					<div class="controls">
+						<input type="text" id="mobilePhone" placeholder="請輸入您的手機號碼">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="email">Email</label>
+					<div class="controls">
+						<input type="text" id="email" placeholder="請輸入您的Email信箱">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="contactTime">方便聯絡時間</label>
+					<div class="controls">
+						<select name="contactTime">
+							<option>白天 8:00~12:00</option>
+							<option>下午 14:00~18:00</option>
+							<option>晚上 18:00~22:00</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="message">留言</label>
+					<div class="controls">
+						<textarea id="message"></textarea>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="validCode">驗證碼</label>
+					<div class="controls">
+						<img src="http://placekitten.com/180/100" /><br />
+						<input type="text" id="validCode" placeholder="請輸入驗證碼">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<button type="submit" class="btn">送出</button>
+					</div>
+				</div>
+			</form>
 		</div>
+		<hr class="dashed-hr"></hr>
 		<div class="footer clearfix">
 			<div class="row">
 				<div class="span6">

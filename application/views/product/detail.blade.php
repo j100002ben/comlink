@@ -4,7 +4,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>首頁</title>
+	<title>產品介紹</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta http-equiv="x-dns-prefetch-control" content="off">
 	<meta http-equiv="Window-target" content="_top" >
@@ -35,63 +35,55 @@
 				</div>
 			</div>
 		</div>
-		<hr class="dashed-hr"></hr>
 		<div class="main-content">
-			<div class="main-carousel">
-				<div id="myCarousel" class="carousel slide">
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-					<!-- Carousel items -->
-					<div class="carousel-inner">
-						<div class="active item"><img src="http://placekitten.com/940/300" /></div>
-						<div class="item"><img src="http://placekitten.com/940/300" /></div>
-						<div class="item"><img src="http://placekitten.com/940/300" /></div>
+			<hr class="dashed-hr"></hr>
+				<div class="row">
+					<div class="span2">
+						<ul class="unstyled">
+							<li class="margin-bottom-10"><img src="http://placekitten.com/220/150" /></li>
+							<li class="margin-bottom-10"><img src="http://placekitten.com/220/150" /></li>
+							<li class="margin-bottom-10"><img src="http://placekitten.com/220/150" /></li>
 					</div>
-					<!-- Carousel nav -->
-					<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+					<div class="span6">
+						<img src="http://placekitten.com/460/320" />
+					</div>
+					<div class="span4">
+						<h3>產品名稱</h3>
+						<ul class="unstyled">
+							<li>尺寸</li>
+							<li>規格</li>
+							<li>規格</li>
+						</ul>
+						<div class="clearfix">
+							<span>where to buy</span>
+							<ul class="unstyled">
+								<li class="pull-left margin-right-10"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/65/65" /></a></li>
+								<li class="pull-left margin-right-10"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/65/65" /></a></li>
+								<li class="pull-left margin-right-10"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/65/65" /></a></li>
+								<li class="pull-left margin-right-10"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/65/65" /></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-			<hr class="dashed-hr margin-bottom-none"></hr>
+			<hr class="dashed-hr"></hr>
+			<p>無也層時負市深的心部來被次氣醫度前我一濟以天，眼我去！的上常外該人發生跟以樣以全熱們公時人，是加和片一會了影動一改笑不她，遊腦家所很景、話旅電之來！名能定</p>
+			<textarea class="span12"></textarea>
+			<p>無也層時負市深的心部來被次氣醫度前我一濟以天，眼我去！的上常外該；兩熱年；動目早像雨訴所。不仍的水，斯精另方上從他；試古看於不有病品南代也龍知所究出</p>
+			<strong>Message</strong>
+			<hr class="dashed-hr"></hr>
 			<div class="row">
-				<div class="span6">
-					<div class="row margin-top-20">
-						<div class="span3">
-							<a href="{{ URL::to('news') }}"><img src="http://placekitten.com/220/150" /></a>
-						</div>
-						<div class="span3">
-							<a href="{{ URL::to('news') }}"><p>這是最新消息cinia odio sem nec elit.……（繼續閱讀）</p></a>
-						</div>
-					</div>
-				</div>
-				<div class="span6">
-					<div class="row margin-top-20">
-						<div class="span3">
-							<a href="{{ URL::to('product_dtl') }}"><img src="http://placekitten.com/220/150" /></a>
-						</div>
-						<div class="span3">
-							<a href="{{ URL::to('product_dtl') }}"><p>這是產品內頁cinia odio sem nec elit.……（繼續閱讀）</p></a>
-						</div>
-					</div>
+				<div class="span2"><img src="http://placekitten.com/140/127" /></div>
+				<div class="span10">
+					<span>XXX</span>
+					<p>氣醫度前我一濟以天，眼我去！的上常外該；兩熱年；動目早像雨訴所。不仍的水，斯精另方上從他；試古看於不有病品南代也龍知所</p>
 				</div>
 			</div>
 			<hr class="dashed-hr"></hr>
 			<div class="row">
-				<div class="span6">
-					<h4>about Comlink</h4>
-					<a href="{{ URL::to('about') }}"><p>Nullam quligula, eget lacinia odio sem nec elit.……（繼續閱讀）</p></a>
-				</div>
-				<div class="span4 offset2">
-					<h4>where to buy</h4>
-					<div class="row">
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-						<div class="span1"><a href="{{ URL::to('buy') }}"><img src="http://placekitten.com/60/50" /></a></div>
-					</div>
+				<div class="span2"><img src="http://placekitten.com/140/127" /></div>
+				<div class="span10">
+					<span>XXX</span>
+					<p>氣醫度前我一濟以天，眼我去！的上常外該；兩熱年；動目早像雨訴所。不仍的水，斯精另方上從他；試古看於不有病品南代也龍知所</p>
 				</div>
 			</div>
 		</div>
