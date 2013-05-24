@@ -41,7 +41,7 @@ Route::get('/buy', function(){
 	return View::make('home.buy');
 });
 
-Route::get('/about_comlink', function(){
+Route::get('/about', function(){
 	return View::make('home.about');
 });
 
