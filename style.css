@@ -16,8 +16,14 @@ body{
 .margin-top-20{
 	margin-top: 20px;
 }
+.margin-top-40{
+	margin-top: 40px;
+}
 .margin-bottom-20{
 	margin-bottom: 20px;
+}
+.margin-bottom-40{
+	margin-bottom: 40px;
 }
 .margin-bottom-10{
 	margin-bottom: 10px;
@@ -32,13 +38,13 @@ body{
 	margin-right: 10px;
 }
 .dashed-hr{
-	border-top: 2px dashed #eeeeee;
+	border-top: 1px dashed #CCC;
 }
 .right-dash-border{
-	border-right: 2px dashed #eeeeee;
+	border-right: 1px dashed #CCC;
 }
 .left-dash-border{
-	border-left: 2px dashed #eeeeee;
+	border-left: 1px dashed #CCC;
 }
 .footer{
 	margin: 20px 0 0 0;
@@ -47,3 +53,56 @@ body{
   border-collapse: separate;
   border-spacing: 2px;
 }
+.sidebar-ul{
+	border-top: 1px solid #000;
+}
+.sidebar-ul li{
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+}
+.sidebar-ul li.no-border{
+	border: none;
+}
+.sidebar-ul a{
+	color: #000;
+}
+.about-content-div{
+	border: 1px solid #222;
+	padding: 10px 0 0 0;
+	margin: 40px 0 0 40px;
+}
+.brand-content-div{
+	margin: 20px 0 0 20px;
+}
+.brand-content-div a{
+	color: #000;
+}
+.contact-content-div{
+	
+}
+.contact-title{
+	border-bottom: 1px dashed #CCC;
+}
+.nav-item{
+	display: block;
+	text-align: center;
+	margin: 0 10px;
+}
+.nav-item:link, .nav-item:visited{
+	color: #000;
+	text-decoration: none;
+}
+.nav-item:hover, .nav-item:active{
+	color: #000;
+	text-decoration: none;
+}
+
+.nav-item span{
+	display: block;
+}
+
+
