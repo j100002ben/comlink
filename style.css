@@ -6,13 +6,22 @@ body{
 	letter-spacing: 1px;
 	line-height: 25px;
 }
+
+a:link, a:visited{
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:active{
+	color: #000;
+	text-decoration: none;
+}
+
 .margin-top-none{
 	margin-top: 0px;
 }
 .margin-bottom-none{
 	margin-bottom: 0px;
 }
-
 .margin-top-20{
 	margin-top: 20px;
 }
@@ -37,6 +46,7 @@ body{
 .margin-right-10{
 	margin-right: 10px;
 }
+
 .dashed-hr{
 	border-top: 1px dashed #CCC;
 }
@@ -67,9 +77,7 @@ body{
 .sidebar-ul li.no-border{
 	border: none;
 }
-.sidebar-ul a{
-	color: #000;
-}
+
 .about-content-div{
 	border: 1px solid #222;
 	padding: 10px 0 0 0;
@@ -90,19 +98,102 @@ body{
 .nav-item{
 	display: block;
 	text-align: center;
-	margin: 0 10px;
-}
-.nav-item:link, .nav-item:visited{
-	color: #000;
-	text-decoration: none;
-}
-.nav-item:hover, .nav-item:active{
-	color: #000;
-	text-decoration: none;
+	margin: 40px 42px 0px;
 }
 
 .nav-item span{
 	display: block;
 }
 
+.logo-div{
+	position: relative;
+}
+.logo-link{
+	display: block;
+	width: 226px;
+	height: 93px;
+	background: transparent url(images/logo.png) scroll no-repeat 50% 50%;
+}
+.logo-link span{
+	position: absolute;
+	top: -200px;
+	left: 0px;
+}
 
+.main-h3{
+	background: transparent url(images/menu-triangle.png) scroll no-repeat 0% 0%;
+	text-indent: 20px;
+}
+.buy-link{
+	font-weight: bold;
+	font-style: italic;
+	width: 65px;
+	height: 65px;
+	display: block;
+	margin: 0 10px 0 0;
+	word-wrap: break-word;
+}
+#pchome-link{
+	background: blue;
+	color: #FFF;
+}
+#books-link{
+	background: green;
+	color: #FFF;
+}
+#pinkoi-link{
+	background: pink;
+	color: #FFF;
+}
+#zakka-link{
+	background: grey;
+	color: #FFF;
+}
+
+.chart-table a{
+	display: block;
+	margin: 9px;
+	width: 160px;
+}
+.product-list-item-div{
+	margin: 15px 15px 0 0;
+	position: relative;
+	width: 300px;
+}
+.product-list-item-div div{
+	display: none;
+	color: #FFF;
+	background: #000;
+	opacity: 0.7;
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	text-indent: 10px;
+}
+.product-list-item-table{
+
+}
+.product-list-item-s{
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 15px;
+	position: relative;
+}
+
+.product-list-item-s div{
+	display: none;
+	color: #FFF;
+	background: #000;
+	opacity: 0.7;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	text-indent: 10px;
+}
