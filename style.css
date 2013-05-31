@@ -133,20 +133,35 @@ a:hover, a:active{
 	margin: 0 10px 0 0;
 	word-wrap: break-word;
 }
+.buy-link-b{
+	font-weight: bold;
+	width: 140px;
+	height: 127px;
+	display: block;
+	margin: 0 10px 0 0;
+	word-wrap: break-word;
+}
+.product-dtl-buy-link{
+	width: 65px;
+	height: 65px;
+	display: inline-block;
+	margin-right: 5px;
+	word-wrap: break-word;
+}
 #pchome-link{
-	background: blue;
+	background: #2a85c7;
 	color: #FFF;
 }
 #books-link{
-	background: green;
+	background: #89b929;
 	color: #FFF;
 }
 #pinkoi-link{
-	background: pink;
+	background: #e56189;
 	color: #FFF;
 }
 #zakka-link{
-	background: grey;
+	background: #c4b097;
 	color: #FFF;
 }
 
@@ -196,4 +211,27 @@ a:hover, a:active{
 	left: 0px;
 	position: absolute;
 	text-indent: 10px;
+}
+
+.product-dtl-ul{
+	
+}
+.product-dtl-ul li{
+	font-size: 14px;
+	line-height: 30px;
+}
+.product-dtl-ul span{
+	display: inline-block;
+	text-indent: 20px;
+}
+.product-dtl-h3{
+	border-bottom: 1px solid #000;
+	padding: 0px 0px 15px 0;
+}
+
+.product-dtl-smallpic{
+	margin: 0 0 18px 0;
+}
+.product-dtl-content-div{
+	margin: 10px 0 ;
 }
