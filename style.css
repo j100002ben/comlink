@@ -92,9 +92,6 @@ a:hover, a:active{
 .contact-content-div{
 	
 }
-.contact-title{
-	border-bottom: 1px dashed #CCC;
-}
 .nav-item{
 	display: block;
 	text-align: center;
@@ -124,6 +121,11 @@ a:hover, a:active{
 	background: transparent url(images/menu-triangle.png) scroll no-repeat 0% 0%;
 	text-indent: 20px;
 }
+.contact-h3{
+	background: transparent url(images/contact-triangle.png) scroll no-repeat 100% 80%;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 20px;
+}
 .buy-link{
 	font-weight: bold;
 	font-style: italic;
@@ -137,9 +139,8 @@ a:hover, a:active{
 	font-weight: bold;
 	width: 140px;
 	height: 127px;
-	display: block;
+	display: inline-block;
 	margin: 0 10px 0 0;
-	word-wrap: break-word;
 }
 .product-dtl-buy-link{
 	width: 65px;
@@ -234,4 +235,36 @@ a:hover, a:active{
 }
 .product-dtl-content-div{
 	margin: 10px 0 ;
+}
+.buy-info-div{
+	width: 700px;
+	margin: 0 auto;
+}
+.buy-info-div span{
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	width: 233px;
+	text-align: center;
+}
+.buy-planning{
+	background: transparent url(images/where-to-buy-strip.png) scroll repeat-X 50% 50%;
+}
+.contact-bg-div{
+	background-image: url(images/contact-bg-leftt.png),url(images/contact-bg-right.png);
+	background-position: 0% 11%,100% 100%;
+	background-repeat: no-repeat,no-repeat;
+}
+.contact-content-div{
+	width: 350px;
+	margin: auto;
+}
+
+.contact-content-div .form-horizontal .control-label{
+	width: 100px;
+	text-align: left;
+}
+
+.contact-content-div .form-horizontal .controls{
+	margin-left: 0px;
 }
