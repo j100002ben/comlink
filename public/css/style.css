@@ -77,6 +77,9 @@ a:hover, a:active{
 .sidebar-ul li.no-border{
 	border: none;
 }
+.sidebar-ul li strong {
+	font-size: 1.1em;
+}
 
 .about-content-div{
 	padding: 10px 0 0 0;
@@ -316,3 +319,23 @@ a:hover, a:active{
 	border-radius: 0;
 	border: 1px solid #333;
 }
+
+.chart-table a {
+	
+}
+#top-menu {
+	background: url(../img/menu.png) scroll no-repeat 44px 7px;
+	padding-left: 44px;
+}
+#top-menu li {
+	
+}
+#top-menu a {
+	padding-top: 40px;
+	font-size: 1.4em;
+	margin: 30px 0 0 45px;
+	width: 90px;
+}
+#top-menu li:first-child a {
+	margin-left: 0;
+};

@@ -11,11 +11,11 @@
 		<div class="span2">
 			<ul class="unstyled sidebar-ul margin-top-40">
 				<li><span><strong>關於附點</strong></span></li>
-				<li><a href="#about-comlink1">是甚麼</a></li>
-				<li><a href="#about-comlink2">做甚麼</a></li>
-				<li><a href="#about-comlink3">大事紀</a></li>
-				<li><a href="#about-comlink4">附點生活</a></li>
-				<li><a href="dott_chart">角色介紹</a></li>
+				<li><a href="{{ route('dott_brand') }}#about-comlink1">是甚麼</a></li>
+				<li><a href="{{ route('dott_brand') }}#about-comlink2">做甚麼</a></li>
+				<li><a href="{{ route('dott_brand') }}#about-comlink3">大事紀</a></li>
+				<li><a href="{{ route('dott_brand') }}#about-comlink4">附點生活</a></li>
+				<li><a href="{{ route('dott_chart') }}">角色介紹</a></li>
 				<li class="no-border"><a href="#top"><i class="icon-arrow-up"></i>top</a></li>
 			</ul>
 		</div>

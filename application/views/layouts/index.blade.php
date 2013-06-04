@@ -25,14 +25,14 @@
 					<h1><a href="{{ url('') }}" class="logo-link"><span>Comlink</span></h1></a>
 				</div>
 				<div class="span9">
-					<ul class="unstyled clearfix">
+					<ul id="top-menu" class="unstyled clearfix">
 						<li class="pull-left">
-							<a href="{{ url('dott_brand') }}" class="nav-item">
+							<a href="{{ route('dott_brand') }}" class="nav-item">
 								品牌介紹<span>Brand</span>
 							</a>
 						</li>
 						<li class="pull-left">
-							<a href="product_list.html" class="nav-item">
+							<a href="{{ route('product') }}" class="nav-item">
 								產品介紹<span>Product</span>
 							</a>
 						</li>

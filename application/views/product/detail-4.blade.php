@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-關於康利金
+產品介紹
 @endsection
 
 <?php
@@ -12,6 +12,25 @@ else
 ?>
 
 @section('content')
+<script>
+(function(window){
+	var $ = window.jQuery
+	  , document = window.document
+	  ;
+	$(function(){
+		$('li.margin-bottom-10 > img').on('click', function(){
+			$next_src = $(this).attr('src');
+			$prev_src = $('#image-container').attr('src');
+			$(this).animate({opacity:0}, 500, function(){
+				$(this).animate({opacity:1}, 500).attr('src', $prev_src);
+			});
+			$('#image-container').animate({opacity:0}, 500, function(){
+				$(this).animate({opacity:1}, 500).attr('src', $next_src);
+			});
+		});
+	});
+})(window);
+</script>
 <div class="main-content">
 	<hr class="dashed-hr"></hr>
 		<div class="row">
@@ -22,14 +41,13 @@ else
 					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-04.jpg') }}" /></li>
 			</div>
 			<div class="span6">
-				<img src="{{ asset('img/product/'.$link_name.'-01.jpg') }}" />
+				<img id="image-container" src="{{ asset('img/product/'.$link_name.'-01.jpg') }}" />
 			</div>
 			<div class="span4">
-				<h3>產品名稱</h3>
+				<h3>徽章</h3>
 				<ul class="unstyled">
-					<li>尺寸</li>
-					<li>規格</li>
-					<li>規格</li>
+					<li>材質 / 塑膠，霧膜</li>
+					<li>尺寸 / 3.2 × 3.2 （cm）</li>
 				</ul>
 				<div class="clearfix">
 					<span>where to buy</span>
@@ -52,15 +70,25 @@ else
 	</div>
 	<div class="row">
 		<div class="span10">
-			<span>/ 商品故事 /</span>
-			<p>氣醫度前我一濟以天，眼我去！的上常外該；兩熱年；動目早像雨訴所。不仍的水，斯精另方上從他；試古看於不有病品南代也龍知所</p>
+			<span style="font-size:1.3em;font-weight:bold;display:block;margin:15px 0;">/ 商品說明及故事 /</span>
+			<p>小巧可愛的霧面徽章，<br>
+			最經典的圖樣設計，<br>
+			不管是別在背包或是筆袋上都適合到不行！<br>
+			也是收藏一套的最佳選擇！</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="span10">
-			<span>/ 品牌簡介 /</span>
-			<p>氣醫度前我一濟以天，眼我去！的上常外該；兩熱年；動目早像雨訴所。不仍的水，斯精另方上從他；試古看於不有病品南代也龍知所</p>
+			<span style="font-size:1.3em;font-weight:bold;display:block;margin:15px 0;">/ 品牌簡介 /</span>
+			<p>Add a dot , add a lot .<br>
+			創造出無限的可能！</p>
+			<p>附點生活是附點品牌成立的粉絲團，<br>
+			一開始透過圖文的方式讓大家認識我們，<br>
+			也因為「附點」的關係創造了十個角色，<br>
+			融入大家的生活中。</p>
+</p>
 		</div>
 	</div>
 </div>
+<hr class="dashed-hr"></hr>
 @endsection

@@ -38,6 +38,47 @@ Route::get('buy', array( 'as' => 'buy', function(){
 	return View::make('home.buy');
 }));
 
+
+Route::get('product', array( 'as' => 'product', function(){
+	return View::make('product.index');
+}));
+
+Route::get('product_dtl/(:any)', array( 'as' => 'product-dtl', function( $product_name ){
+	$product_name = rawurldecode($product_name);
+	$product_route = array(
+		'130℃環保筷' => '1',
+		'攪拌棒' => '2',
+		'杯墊' => '3',
+		'徽章' => '4',
+		'貼紙' => '5',
+		'卡片' => '6',
+		'毛巾' => '7',
+		'筆袋' => '8',
+		'馬克杯' => '9',
+		'冰中劍' => '10'
+		);
+	if( !isset($product_route[$product_name]) ){
+		return View::make('product.index');
+	}
+	return View::make('product.detail-' . $product_route[$product_name])->with('product_name', $product_name);
+}));
+
+Route::get('/product_list', function(){
+	return View::make('product.list');
+});
+
+Route::get('/brand', function(){
+	return View::make('brand.index');
+});
+
+Route::get('dott_brand', array( 'as' => 'dott_brand' , function(){
+	return View::make('brand.dott');
+}));
+
+Route::get('dott_chart', array( 'as' => 'dott_chart', function(){
+	return View::make('brand.chart');
+}));
+
 Route::get('contact', array( 'as' => 'contact', function(){
 	return View::make('home.contact');
 }));
@@ -71,31 +112,6 @@ EOT
 	return Redirect::to_route('contact');
 }));
 
-
-
-Route::get('/product', function(){
-	return View::make('product.index');
-});
-
-Route::get('/product_dtl', function(){
-	return View::make('product.detail');
-});
-
-Route::get('/product_list', function(){
-	return View::make('product.list');
-});
-
-Route::get('/brand', function(){
-	return View::make('brand.index');
-});
-
-Route::get('/dott_brand', function(){
-	return View::make('brand.dott');
-});
-
-Route::get('/chart', function(){
-	return View::make('home.chart');
-});
 
 /*
 |--------------------------------------------------------------------------
