@@ -47,7 +47,7 @@ Route::post('contact', array( function(){
 	$mailer = IoC::resolve('mailer');
 	$message = Swift_Message::newInstance('[Comlink] 聯絡我們通知信')
 	    ->setFrom(array('server@comlink.com'=>'Comlink Server'))
-	    ->setTo(array('comlink@clients.poka.tw'=>'Client-Comlink'))
+	    ->setTo(array('service@comlinktek.com'=>'Comlink Service'))
 	    ->setBcc(array('comlink@clients.poka.tw'=>'Client-Comlink'))
 	    ->setReplyTo(array($input['email']=>$input['name']))
 	    ->setBody(<<<EOT
