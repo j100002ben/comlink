@@ -38,6 +38,6 @@ return array(
 	'bootstrapper' => array('auto' => true),
 	'form-base-model' => array('auto' => true),
 	'swiftmailer' => array('auto' => true),
-	'sentry' => array('auto' => true),
+	'charisma' => array('handles' => 'admin'),
 
 );

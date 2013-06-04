@@ -1,0 +1,270 @@
+body{
+	font-size: 13px;
+	padding: 0;
+	text-decoration: none;
+	font-family: "微軟正黑體","Microsoft JhengHei",Arial;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+a:link, a:visited{
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:active{
+	color: #000;
+	text-decoration: none;
+}
+
+.margin-top-none{
+	margin-top: 0px;
+}
+.margin-bottom-none{
+	margin-bottom: 0px;
+}
+.margin-top-20{
+	margin-top: 20px;
+}
+.margin-top-40{
+	margin-top: 40px;
+}
+.margin-bottom-20{
+	margin-bottom: 20px;
+}
+.margin-bottom-40{
+	margin-bottom: 40px;
+}
+.margin-bottom-10{
+	margin-bottom: 10px;
+}
+.margin-left-20{
+	margin-left: 20px;
+}
+.margin-left-10{
+	margin-left: 10px;
+}
+.margin-right-10{
+	margin-right: 10px;
+}
+
+.dashed-hr{
+	border-top: 1px dashed #CCC;
+}
+.right-dash-border{
+	border-right: 1px dashed #CCC;
+}
+.left-dash-border{
+	border-left: 1px dashed #CCC;
+}
+.footer{
+	margin: 20px 0 0 0;
+}
+.table-separate{
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+.sidebar-ul{
+	border-top: 1px solid #000;
+}
+.sidebar-ul li{
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+}
+.sidebar-ul li.no-border{
+	border: none;
+}
+
+.about-content-div{
+	border: 1px solid #222;
+	padding: 10px 0 0 0;
+	margin: 40px 0 0 40px;
+}
+.brand-content-div{
+	margin: 20px 0 0 20px;
+}
+.brand-content-div a{
+	color: #000;
+}
+.contact-content-div{
+	
+}
+.nav-item{
+	display: block;
+	text-align: center;
+	margin: 40px 42px 0px;
+}
+
+.nav-item span{
+	display: block;
+}
+
+.logo-div{
+	position: relative;
+}
+.logo-link{
+	display: block;
+	width: 226px;
+	height: 93px;
+	background: transparent url(../img/logo.png) scroll no-repeat 50% 50%;
+}
+.logo-link span{
+	position: absolute;
+	top: -200px;
+	left: 0px;
+}
+
+.main-h3{
+	background: transparent url(../img/menu-triangle.png) scroll no-repeat 0% 0%;
+	text-indent: 20px;
+}
+.contact-h3{
+	background: transparent url(../img/contact-triangle.png) scroll no-repeat 100% 80%;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 20px;
+}
+.buy-link{
+	font-weight: bold;
+	font-style: italic;
+	width: 65px;
+	height: 65px;
+	display: block;
+	margin: 0 10px 0 0;
+	word-wrap: break-word;
+}
+.buy-link-b{
+	font-weight: bold;
+	width: 140px;
+	height: 127px;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.product-dtl-buy-link{
+	width: 65px;
+	height: 65px;
+	display: inline-block;
+	margin-right: 5px;
+	word-wrap: break-word;
+}
+#pchome-link{
+	background: #2a85c7;
+	color: #FFF;
+}
+#books-link{
+	background: #89b929;
+	color: #FFF;
+}
+#pinkoi-link{
+	background: #e56189;
+	color: #FFF;
+}
+#zakka-link{
+	background: #c4b097;
+	color: #FFF;
+}
+
+.chart-table a{
+	display: block;
+	margin: 9px;
+	width: 160px;
+}
+.product-list-item-div{
+	margin: 15px 15px 0 0;
+	position: relative;
+	width: 300px;
+}
+.product-list-item-div div{
+	display: none;
+	color: #FFF;
+	background: #000;
+	opacity: 0.7;
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	text-indent: 10px;
+}
+.product-list-item-table{
+
+}
+.product-list-item-s{
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 15px;
+	position: relative;
+}
+
+.product-list-item-s div{
+	display: none;
+	color: #FFF;
+	background: #000;
+	opacity: 0.7;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	text-indent: 10px;
+}
+
+.product-dtl-ul{
+	
+}
+.product-dtl-ul li{
+	font-size: 14px;
+	line-height: 30px;
+}
+.product-dtl-ul span{
+	display: inline-block;
+	text-indent: 20px;
+}
+.product-dtl-h3{
+	border-bottom: 1px solid #000;
+	padding: 0px 0px 15px 0;
+}
+
+.product-dtl-smallpic{
+	margin: 0 0 18px 0;
+}
+.product-dtl-content-div{
+	margin: 10px 0 ;
+}
+.buy-info-div{
+	width: 700px;
+	margin: 0 auto;
+}
+.buy-info-div span{
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	width: 233px;
+	text-align: center;
+}
+.buy-planning{
+	background: transparent url(../img/where-to-buy-strip.png) scroll repeat-X 50% 50%;
+}
+.contact-bg-div{
+	background-image: url(../img/contact-bg-leftt.png),url(../img/contact-bg-right.png);
+	background-position: 0% 11%,100% 100%;
+	background-repeat: no-repeat,no-repeat;
+}
+.contact-content-div{
+	width: 350px;
+	margin: auto;
+}
+
+.contact-content-div .form-horizontal .control-label{
+	width: 100px;
+	text-align: left;
+}
+
+.contact-content-div .form-horizontal .controls{
+	margin-left: 0px;
+}

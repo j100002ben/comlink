@@ -219,7 +219,6 @@ return array(
 		'BS_Typeahead'      => 'Bootstrapper\\Typeahead',
 		'BS_Typography'     => 'Bootstrapper\\Typography',
 		
-		'Sentry'            => 'Cartalyst\Sentry\SentryServiceProvider',
 	),
 
 );

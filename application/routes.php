@@ -5,9 +5,69 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
-Route::get('/news', function(){
+Route::get('page/(:all)', array( 'as' => 'page', function( $page_name ){
+	return $page_name;
+}));
+
+Route::get('news', array( 'as' => 'news', function(){
 	return View::make('news.index');
-});
+}));
+/*
+Route::get('news/(:all)', array( 'as' => 'news-detail', function( $page_name ){
+	return $page_name;
+}));
+*/
+
+Route::get('about/(:all)', array( 'as' => 'about', function( $page_name ){
+	return $page_name;
+}));
+
+Route::get('brand/(:all)', array( 'as' => 'brand', function( $page_name ){
+	return $page_name;
+}));
+
+Route::get('brand-detail/(:all)', array( 'as' => 'brand-detail', function( $page_name ){
+	return $page_name;
+}));
+
+Route::get('buy', array( 'as' => 'buy', function(){
+	return View::make('home.buy');
+}));
+
+Route::get('contact', array( 'as' => 'contact', function(){
+	return View::make('home.contact');
+}));
+
+Route::post('contact', array( function(){
+	$input = Input::all();
+	$mailer = IoC::resolve('mailer');
+	$message = Swift_Message::newInstance('[Comlink] 聯絡我們通知信')
+	    ->setFrom(array('server@comlink.com'=>'Comlink Server'))
+	    ->setTo(array('comlink@clients.poka.tw'=>'Client-Comlink'))
+	    ->setBcc(array('comlink@clients.poka.tw'=>'Client-Comlink'))
+	    ->setReplyTo(array($input['email']=>$input['name']))
+	    ->setBody(<<<EOT
+{$input['name']}於[Comlink]發送一封留言
+日期：2013年6月3日 PM 03:54 Mon
+以下為留言內容：
+────────────────────────────────────────
+聯絡姓名：{$input['name']}
+E-mail：{$input['email']}
+電話：{$input['phone']}
+手機：{$input['mobile']}
+方便時間：{$input['time']}
+問題敘述：
+{$input['message']}
+
+────────────────────────────────────────
+如需回復給使用者，請直接回覆此E-mail。
+EOT
+,'text/plain');
+	$mailer->send($message);
+	return Redirect::to_route('contact');
+}));
+
+
 
 Route::get('/product', function(){
 	return View::make('product.index');
@@ -29,21 +89,14 @@ Route::get('/dott_brand', function(){
 	return View::make('brand.dott');
 });
 
-Route::get('/contact', function(){
-	return View::make('home.contact');
-});
-
 Route::get('/chart', function(){
 	return View::make('home.chart');
-});
-
-Route::get('/buy', function(){
-	return View::make('home.buy');
 });
 
 Route::get('/about', function(){
 	return View::make('home.about');
 });
+
 
 /*
 |--------------------------------------------------------------------------
