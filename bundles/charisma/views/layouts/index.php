@@ -3,7 +3,7 @@
 <head>
 	<base href="<?php echo URL::base() ?>/bundles/charisma/">
 	<meta charset="utf-8">
-	<title>Free HTML5 Bootstrap Admin Template</title>
+	<title>Comlink Admin Panel</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
 	<meta name="author" content="Muhammad Usman">
@@ -87,7 +87,7 @@
 				
 				<div class="top-nav nav-collapse">
 					<ul class="nav">
-						<li><a href="<?php echo url('') ?>">Visit Site</a></li>
+						<li><a href="<?php echo url('') ?>" target="_blank">Visit Site</a></li>
 						<!--
 						<li>
 							<form class="navbar-search pull-left">

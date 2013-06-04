@@ -40,7 +40,24 @@ Route::group(array('before' => 'auth'), function()
 		return Redirect::to_route('admin.page');
 	}));
 	
-	Route::get('(:bundle)/news', array('as' => 'admin.news', 'uses' => 'charisma::home@news'));
+	Route::get('(:bundle)/news', array('as' => 'admin.news', 'uses' => 'charisma::news@news'));
+	
+	
+	Route::get('(:bundle)/news-new', array('as' => 'admin.news.new', 'uses' => 'charisma::news@news_new'));
+	Route::post('(:bundle)/news-new', array('uses' => 'charisma::news@news_new'));
+	
+	Route::get('(:bundle)/news-edit/(:num)', array('as' => 'admin.news.edit', 'uses' => 'charisma::news@news_edit'));
+	Route::post('(:bundle)/news-edit/(:num)', array('uses' => 'charisma::news@news_edit'));
+	
+	Route::get('(:bundle)/news-delete/(:num)', array('as' => 'admin.news.delete', function($id){
+		$page = Page::find($id);
+		if( $page ){
+			$page->status = 'deleted';
+			$page->timestamp();
+			$page->save();
+		}
+		return Redirect::to_route('admin.news');
+	}));
 });
 
 Route::filter('guest', function()
