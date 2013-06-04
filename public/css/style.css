@@ -48,13 +48,15 @@ a:hover, a:active{
 }
 
 .dashed-hr{
-	border-top: 1px dashed #CCC;
+	border-top: 1px dashed #555;
 }
 .right-dash-border{
-	border-right: 1px dashed #CCC;
+	border-right: 1px dashed #555;
+	margin-left: -1px;
 }
 .left-dash-border{
-	border-left: 1px dashed #CCC;
+	border-left: 1px dashed #555;
+	margin-right: -1px;
 }
 .footer{
 	margin: 20px 0 0 0;
@@ -64,24 +66,27 @@ a:hover, a:active{
   border-spacing: 2px;
 }
 .sidebar-ul{
-	border-top: 1px solid #000;
 }
 .sidebar-ul li{
-	border-right: 1px solid #000;
-	border-left: 1px solid #000;
-	border-bottom: 1px solid #000;
+	font-size: 16px;
 	text-align: center;
 	line-height: 30px;
 	height: 30px;
+	margin: 10px 0;
 }
 .sidebar-ul li.no-border{
 	border: none;
 }
 
 .about-content-div{
-	border: 1px solid #222;
 	padding: 10px 0 0 0;
 	margin: 40px 0 0 40px;
+}
+.about-content-div h4 {
+	font-weight: bold;
+}
+.about-content-div p {
+	font-size: 13px;
 }
 .brand-content-div{
 	margin: 20px 0 0 20px;
@@ -123,7 +128,7 @@ a:hover, a:active{
 }
 .contact-h3{
 	background: transparent url(../img/contact-triangle.png) scroll no-repeat 100% 80%;
-	border-bottom: 1px dashed #CCC;
+	border-bottom: 1px dashed #555;
 	margin-bottom: 20px;
 }
 .buy-link{
@@ -267,4 +272,47 @@ a:hover, a:active{
 
 .contact-content-div .form-horizontal .controls{
 	margin-left: 0px;
+}
+
+
+.carousel-indicators li {
+	border: 1px solid #333;
+	box-shadow: 1px 1px;
+}
+
+.carousel-control {
+	top: 50%;
+}
+
+#index-prod-left-note {
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#index-where-to-buy ul {
+	text-align: center;
+}
+
+#index-where-to-buy li {
+	display: inline-block;
+}
+
+#news-content p {
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+#news-content .span2 strong {
+	font-family: Arial;
+	letter-spacing: 4px;
+	font-size: 15px;
+}
+
+.contact-content-div select,
+.contact-content-div textarea,
+.contact-content-div input {
+	border-radius: 0;
+	border: 1px solid #333;
 }

@@ -5,6 +5,10 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
+Route::get('about', array( 'as' => 'about', function(){
+	return View::make('home.about');
+}));
+
 Route::get('page/(:all)', array( 'as' => 'page', function( $page_name ){
 	return $page_name;
 }));
@@ -92,11 +96,6 @@ Route::get('/dott_brand', function(){
 Route::get('/chart', function(){
 	return View::make('home.chart');
 });
-
-Route::get('/about', function(){
-	return View::make('home.about');
-});
-
 
 /*
 |--------------------------------------------------------------------------

@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<hr class="dashed-hr"></hr>
 <div class="main-content contact-bg-div">
 	<div class="contact-content-div">
 		<h3 class="contact-h3">Contact Us</h3>
@@ -67,4 +68,5 @@
 		</form>
 	</div>
 </div>
+<hr class="dashed-hr"></hr>
 @endsection

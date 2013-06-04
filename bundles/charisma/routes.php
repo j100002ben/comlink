@@ -22,6 +22,12 @@ Route::group(array('before' => 'auth'), function()
 {
 	Route::get('(:bundle)/index', array('as' => 'admin.index', 'uses' => 'charisma::home@index'));
 	
+	Route::get('(:bundle)/page-index', array('as' => 'admin.page-index', function(){
+		return View::make('charisma::index.index');
+	}));
+	
+	
+	
 	Route::get('(:bundle)/page', array('as' => 'admin.page', 'uses' => 'charisma::home@page'));
 	
 	Route::get('(:bundle)/page-new', array('as' => 'admin.page.new', 'uses' => 'charisma::home@page_new'));

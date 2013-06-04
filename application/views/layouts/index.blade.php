@@ -55,16 +55,18 @@
 				</div>
 			</div>
 		</div>
-		<hr class="dashed-hr"></hr>
 		@yield('content')
-		<hr class="dashed-hr"></hr>
 		<div class="footer clearfix">
 			<div class="row">
 				<div class="span6">
-					電話 (02) 2545-2535<span>地址</span>
+					Comlink Trading Development Co., Ltd.<br>
+					+886-02-25452535<br>
+					service@comlinktek.com
 				</div>
 				<div class="span4 offset2 text-right">
-					2013 Comlink All Rights Reserved.
+					<br>
+					2013 Comlink &copy;<br>
+					All Rights Reserved.
 				</div>
 			</div>
 		</div>

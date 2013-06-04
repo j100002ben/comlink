@@ -1,77 +1,50 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html lang="zh-tw" class="no-js lte-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="zh-tw" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"><!--<![endif]-->
-<head profile="http://www.w3.org/2005/10/profile">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>關於康利金</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta http-equiv="x-dns-prefetch-control" content="off">
-	<meta http-equiv="Window-target" content="_top" >
-	<meta http-equiv="content-language" content="zh-TW" >
-	<meta http-equiv="imagetoolbar" content="no" >
-	<meta name="resource-type" content="document" >
-	<meta name="date" content="2013" >
-	{{ HTML::style('bundles/bootstrapper/css/bootstrap.min.css') }}
-	{{ HTML::style('css/prototype-style.css') }}
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	{{ HTML::script('bundles/bootstrapper/js/bootstrap.min.js') }}
-</head>
-<body>
-	<div class="container">
-		<div class="header">
-			<div class="row">
-				<div class="span3"><a href="{{ URL::base() }}"><img src="http://placekitten.com/220/150" class="img-polaroid"/></a></div>
-				<div class="span9 clearfix">
-					<div class="pull-left">
-						<ul class="unstyled" id="top-nav">
-							<li class="pull-left"><a href="{{ URL::to('dott_brand') }}" class="btn">附點品牌</a></li>
-							<li class="pull-left"><a href="{{ URL::to('product_list') }}" class="btn">產品介紹</a></li>
-							<li class="pull-left"><a href="{{ URL::to('news') }}" class="btn">最新消息</a></li>
-							<li class="pull-left"><a href="{{ URL::to('buy') }}" class="btn">購買通路</a></li>
-							<li class="pull-left"><a href="{{ URL::to('contact') }}" class="btn">聯絡我們</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+@layout('layouts.index')
+
+@section('head-title')
+關於康利金
+@endsection
+
+@section('content')
+<div class="main-content">
+	<hr class="dashed-hr margin-bottom-none"></hr>
+	<div class="row">
+		<div class="span2">
+			<ul class="unstyled sidebar-ul margin-top-40">
+				<li><span><strong>關於康利金</strong></span></li>
+				<li><a href="#about-comlink1">是甚麼</a></li>
+				<li><a href="#about-comlink2">做甚麼</a></li>
+				<li><a href="#about-comlink3">大事紀</a></li>
+				<li><a href="#top"><i class="icon-arrow-up"></i>top</a></li>
+			</ul>
 		</div>
-		<div class="main-content">
-			<hr class="dashed-hr margin-bottom-none"></hr>
-			<div class="row">
-				<div class="span3">
-					<h3>about_comlink</h3>
-					<ul class="unstyled">
-						<li><a href="">這是列表項目</a></li>
-						<li><a href="">這是列表項目</a></li>
-						<li><a href="">這是列表項目</a></li>
-						<li><a href="">這是列表項目</a></li>
-						<li><a href="">這是列表項目</a></li>
-					</ul>
+		<div class="span9 left-dash-border">
+			<div class="about-content-div">
+				<div class="margin-bottom-40">
+					<p><img src="{{ asset('img/about/about.jpg') }}"></p>
 				</div>
-				<div class="span8 left-dash-border">
-					<div class="margin-top-20 margin-left-20">
-						<img src="http://placekitten.com/620/200" />
-						<h3>about_comlink</h3>
-						<p>Nullam quligula, eget lacinia odio sem nec llam quligula, eget lacinia odio sem nec elitllam quligula, eget lacinia odio sem nec elitelit</p>
-					</div>
-					<div class="margin-top-20 margin-left-20">
-						<img src="http://placekitten.com/620/200" />
-						<h3>about_comlink</h3>
-						<p>Nullam quligula, eget lacinia odio sem nec llam quligula, eget lacinia odio sem nec elitllam quligula, eget lacinia odio sem nec elitelit</p>
-					</div>
+				<div class="margin-bottom-40">
+					<h4 id="about-comlink1">是甚麼</h4>
+					<p>Combine + Link = Comlink。<br>
+					康利金是一間企業，<br>
+					企業三大經營理念是「追求生活的夢想、創造生活的感動、實現生活的幸福！」，<br>
+					將夢想、感動、幸福融入到大家的生活中，<br>
+					再透過人與人之間的連結將這份理念繼續延續，<br>
+					是我們企業的理想和目標。</p>
 				</div>
-			</div>
-		</div>
-		<div class="footer clearfix">
-			<div class="row">
-				<div class="span6">
-					電話 (XX) XXXX-XXXX<span>地址 XXX</span><
+				<div class="margin-bottom-40">
+					<h4 id="about-comlink2">做甚麼</h4>
+					<p>康利金希望能夠成立屬於台灣的品牌，讓設計留在台灣，<br>
+					做出令人感動的產品，讓台灣的好設計可以從台灣出發，讓世界看見。</p>
 				</div>
-				<div id="copyright" class="span5 offset1">
-					版權所有 © 2013 Comlink All Rights Reserved.
+				<div class="margin-bottom-40">
+					<h4 id="about-comlink3">大事紀</h4>
+					<p>2012.07 康利金成立<br>
+					2012.12 附點品牌成立<br>
+					2013.06 官方網站成立</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+</div>
+<hr class="dashed-hr"></hr>
+@endsection
