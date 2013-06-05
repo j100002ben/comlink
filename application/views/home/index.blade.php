@@ -13,20 +13,20 @@
 		<div class="span6 right-dash-border">
 			<div class="row margin-top-20">
 				<div class="span3">
-					<a href="news.html"><img style="width: " src="{{ asset('img/index/product-left.jpg') }}" /></a>
+					<a href="{{ route('product-dtl', array('徽章')) }}"><img style="width: " src="{{ asset('img/index/product-left.jpg') }}" /></a>
 				</div>
 				<div class="span3" id="index-prod-left-note">
-					<a href="news.html"><p>小巧可愛的霧面徽章， 最經典的圖樣設計， 不管是別在背包或是筆袋上都適合到不行！<br>也是收藏一套的最佳選擇！……（繼續閱讀）</p></a>
+					<a href="{{ route('product-dtl', array('徽章')) }}"><p>小巧可愛的霧面徽章， 最經典的圖樣設計， 不管是別在背包或是筆袋上都適合到不行！<br>也是收藏一套的最佳選擇！……（繼續閱讀）</p></a>
 				</div>
 			</div>
 		</div>
 		<div class="span6">
 			<div class="row margin-top-20">
 				<div class="span3">
-					<a href="product_dtl.html"><img src="{{ asset('img/index/product-right.jpg') }}" /></a>
+					<a href="{{ route('product-dtl', array('130℃環保筷')) }}"><img src="{{ asset('img/index/product-right.jpg') }}" /></a>
 				</div>
 				<div class="span3">
-					<a href="product_dtl.html"><p>這是愛。使用環保餐具， 是你對地球的愛；<br>做出讓你放心的環保餐具， 是我們對你的愛。……（繼續閱讀）</p></a>
+					<a href="{{ route('product-dtl', array('130℃環保筷')) }}"><p>這是愛。使用環保餐具， 是你對地球的愛；<br>做出讓你放心的環保餐具， 是我們對你的愛。……（繼續閱讀）</p></a>
 				</div>
 			</div>
 		</div>

@@ -58,10 +58,14 @@ Route::get('product_dtl/(:any)', array( 'as' => 'product-dtl', function( $produc
 		'冰中劍' => '10'
 		);
 	if( !isset($product_route[$product_name]) ){
-		return View::make('product.index');
+		return Redirect::to_route('product');
 	}
 	return View::make('product.detail-' . $product_route[$product_name])->with('product_name', $product_name);
 }));
+
+Route::get('product_dtl', function(){
+	return Redirect::to_route('product');
+});
 
 Route::get('/product_list', function(){
 	return View::make('product.list');
