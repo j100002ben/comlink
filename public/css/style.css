@@ -110,15 +110,19 @@ a:hover, a:active{
 .nav-item span{
 	display: block;
 }
-
 .logo-div{
 	position: relative;
+	margin-top: 10px;
+}
+.logo-div h1 {
+	width: 200px;
+	height: 82px;
 }
 .logo-link{
 	display: block;
-	width: 226px;
-	height: 93px;
-	background: transparent url(../img/logo.png) scroll no-repeat 50% 50%;
+	width: 200px;
+	height: 82px;
+	background: transparent url(../img/logo.jpg) scroll no-repeat 50% 50%;
 }
 .logo-link span{
 	position: absolute;

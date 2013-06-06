@@ -22,7 +22,7 @@
 		<div class="header">
 			<div class="row">
 				<div class="span3 logo-div">
-					<h1><a href="{{ url('') }}" class="logo-link"><span>Comlink</span></h1></a>
+					<h1><a href="{{ url('') }}" class="logo-link"><span>Comlink</span></a></h1>
 				</div>
 				<div class="span9">
 					<ul id="top-menu" class="unstyled clearfix">
