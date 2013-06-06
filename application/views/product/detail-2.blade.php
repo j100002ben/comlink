@@ -36,23 +36,25 @@ else
 </script>
 <div class="main-content">
 	<hr class="dashed-hr"></hr>
-		<div class="row">
+		<div class="row" id="product-spot">
 			<div class="span2">
 				<ul class="unstyled">
-					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-01.jpg') }}" /></li>
+					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-02.jpg') }}" /></li>
 					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-03.jpg') }}" /></li>
 					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-04.jpg') }}" /></li>
 			</div>
 			<div class="span6">
-				<img id="image-container" src="{{ asset('img/product/'.$link_name.'-02.jpg') }}" />
+				<img id="image-container" src="{{ asset('img/product/'.$link_name.'-01.jpg') }}" />
 			</div>
-			<div class="span4">
-				<h3>攪拌棒</h3>
-				<ul class="unstyled">
-					<li>材質 / 玻璃</li>
-					<li>尺寸 / 2 × 2 × 18 （cm）</li>
-				</ul>
-				<div class="clearfix">
+			<div class="span4" id="product-info">
+				<div id="product-list">
+					<h3>攪拌棒</h3>
+					<ul class="unstyled">
+						<li>材質 / 玻璃</li>
+						<li>尺寸 / 2 × 2 × 18 （cm）</li>
+					</ul>
+				</div>
+				<div id="product-buy">
 					<span>where to buy</span>
 					<ul class="unstyled">
 						@if ($pchome_link != '')

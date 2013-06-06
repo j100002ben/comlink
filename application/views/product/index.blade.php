@@ -38,13 +38,13 @@
 						<td>
 							<a href="{{ route('product-dtl', array('130℃環保筷')) }}" class="product-list-item-s">
 								<div>130℃環保筷</div>
-								<img src="{{ asset('img/product/130c-01.jpg') }}" />
+								<img src="{{ asset('img/product/130c-04.jpg') }}" />
 							</a>
 						</td>
 						<td>
 							<a href="{{ route('product-dtl', array('攪拌棒')) }}" class="product-list-item-s">
 								<div>攪拌棒</div>
-								<img src="{{ asset('img/product/攪拌棒-01.jpg') }}" />
+								<img src="{{ asset('img/product/攪拌棒-02.jpg') }}" />
 							</a>
 						</td>
 					</tr>
@@ -52,7 +52,7 @@
 						<td>
 							<a href="{{ route('product-dtl', array('杯墊')) }}" class="product-list-item-s">
 								<div>杯墊</div>
-								<img src="{{ asset('img/product/杯墊-01.jpg') }}" />
+								<img src="{{ asset('img/product/杯墊-04.jpg') }}" />
 							</a>
 						</td>
 						<td>
@@ -70,13 +70,13 @@
 						<td>
 							<a href="{{ route('product-dtl', array('貼紙')) }}" class="product-list-item-s">
 								<div>貼紙</div>
-								<img src="{{ asset('img/product/貼紙-01.jpg') }}" />
+								<img src="{{ asset('img/product/貼紙-03.jpg') }}" />
 							</a>
 						</td>
 						<td>
 							<a href="{{ route('product-dtl', array('卡片')) }}" class="product-list-item-s">
 								<div>卡片</div>
-								<img src="{{ asset('img/product/卡片-01.jpg') }}" />
+								<img src="{{ asset('img/product/卡片-03.jpg') }}" />
 							</a>
 						</td>
 					</tr>
@@ -84,13 +84,13 @@
 						<td>
 							<a href="{{ route('product-dtl', array('毛巾')) }}" class="product-list-item-s">
 								<div>毛巾</div>
-								<img src="{{ asset('img/product/毛巾-01.jpg') }}" />
+								<img src="{{ asset('img/product/毛巾-05.jpg') }}" />
 							</a>
 						</td>
 						<td>
 							<a href="{{ route('product-dtl', array('筆袋')) }}" class="product-list-item-s">
 								<div>筆袋</div>
-								<img src="{{ asset('img/product/筆袋-01.jpg') }}" />
+								<img src="{{ asset('img/product/筆袋-02.jpg') }}" />
 							</a>
 						</td>
 					</tr>
@@ -98,7 +98,7 @@
 				<div class="pull-left product-list-item-div">
 					<a href="{{ route('product-dtl', array('馬克杯')) }}">
 						<div>馬克杯</div>
-						<img src="{{ asset('img/product/馬克杯-01.jpg') }}" />
+						<img src="{{ asset('img/product/馬克杯-02.jpg') }}" />
 					</a>
 				</div>
 			</div>

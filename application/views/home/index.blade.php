@@ -41,10 +41,10 @@
 		<div class="span6" id="index-where-to-buy">
 			<h3 class="main-h3">where to buy</h3>
 			<ul class="unstyled clearfix">
-				<li><a title="PcHome" href="http://www.pcstore.com.tw/comlinktek/" id="pchome-link" class="buy-link">
+				<li><a target="_blank" title="PcHome" href="http://www.pcstore.com.tw/comlinktek/" id="pchome-link" class="buy-link">
 					<img src="{{ asset('img/index/where-to-buy-PChome.jpg') }}">
 				</a></li>
-				<li><a title="Pinkoi" href="http://www.pinkoi.com/store/dotted" id="pinkoi-link" class="buy-link">
+				<li><a target="_blank"title="Pinkoi" href="http://www.pinkoi.com/store/dotted" id="pinkoi-link" class="buy-link">
 					<img src="{{ asset('img/index/where-to-buy-Pinkoi.jpg') }}">
 				</a></li>
 			</ul>

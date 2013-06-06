@@ -5,6 +5,7 @@ body{
 	font-family: "微軟正黑體","Microsoft JhengHei",Arial;
 	letter-spacing: 1px;
 	line-height: 25px;
+	background: transparent url('../img/bg.jpg') scroll no-repeat 50% 50%;
 }
 
 a:link, a:visited{
@@ -137,10 +138,9 @@ a:hover, a:active{
 .buy-link{
 	font-weight: bold;
 	font-style: italic;
-	width: 65px;
-	height: 65px;
+	width: 120px;
+	height: 120px;
 	display: block;
-	margin: 0 10px 0 0;
 	word-wrap: break-word;
 }
 .buy-link-b{
@@ -295,7 +295,8 @@ a:hover, a:active{
 }
 
 #index-where-to-buy ul {
-	text-align: center;
+	margin-top: -40px;
+	text-align: right;
 }
 
 #index-where-to-buy li {
@@ -338,4 +339,36 @@ a:hover, a:active{
 }
 #top-menu li:first-child a {
 	margin-left: 0;
-};
+}
+#product-spot {
+	position: relative;
+	height: 460px;
+}
+#product-info {
+	position: relative;
+	height: 100%;
+}
+#product-list {
+	height: 100%;
+	padding-bottom: 140px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+#product-buy {
+	position: absolute;
+	bottom: 0;
+	height: 140px;
+}
+#product-buy > span {
+	font-weight: bold;
+	text-indent: 15px;
+	font-family: Arial;
+	font-size: 14px;
+	display: block;
+}
+.container {
+	padding: 0 40px;
+	background: #FFF
+}

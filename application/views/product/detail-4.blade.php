@@ -36,7 +36,7 @@ else
 </script>
 <div class="main-content">
 	<hr class="dashed-hr"></hr>
-		<div class="row">
+		<div class="row" id="product-spot">
 			<div class="span2">
 				<ul class="unstyled">
 					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-02.jpg') }}" /></li>
@@ -46,13 +46,15 @@ else
 			<div class="span6">
 				<img id="image-container" src="{{ asset('img/product/'.$link_name.'-01.jpg') }}" />
 			</div>
-			<div class="span4">
-				<h3>徽章</h3>
-				<ul class="unstyled">
-					<li>材質 / 塑膠，霧膜</li>
-					<li>尺寸 / 3.2 × 3.2 （cm）</li>
-				</ul>
-				<div class="clearfix">
+			<div class="span4" id="product-info">
+				<div id="product-list">
+					<h3>徽章</h3>
+					<ul class="unstyled">
+						<li>材質 / 塑膠，霧膜</li>
+						<li>尺寸 / 3.2 × 3.2 （cm）</li>
+					</ul>
+				</div>
+				<div id="product-buy">
 					<span>where to buy</span>
 					<ul class="unstyled">
 						@if ($pchome_link != '')
