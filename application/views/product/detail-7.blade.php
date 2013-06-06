@@ -5,6 +5,9 @@
 @endsection
 
 <?php
+$pchome_link = 'http://www.pcstore.com.tw/comlinktek/M13814365.htm';
+$pinkoi_link = '';
+
 if( rawurldecode($product_name) == '130℃環保筷' )
 	$link_name = '130c';
 else
@@ -41,7 +44,7 @@ else
 					<li class="margin-bottom-10"><img src="{{ asset('img/product/'.$link_name.'-04.jpg') }}" /></li>
 			</div>
 			<div class="span6">
-				<img id="image-container" src="{{ asset('img/product/'.$link_name.'-01.jpg') }}" />
+				<img id="image-container" src="{{ asset('img/product/'.$link_name.'-05.jpg') }}" />
 			</div>
 			<div class="span4">
 				<h3>毛巾</h3>
@@ -52,12 +55,16 @@ else
 				<div class="clearfix">
 					<span>where to buy</span>
 					<ul class="unstyled">
-						<li class="pull-left margin-right-10"><a title="PcHome" href="http://www.pcstore.com.tw/comlinktek/" id="pchome-link" class="buy-link">
+						@if ($pchome_link != '')
+						<li class="pull-left margin-right-10"><a target="_blank" title="PcHome" href="{{ $pchome_link }}" id="pchome-link" class="buy-link">
 							<img src="{{ asset('img/index/where-to-buy-PChome.jpg') }}">
 						</a></li>
-						<li class="pull-left margin-right-10"><a title="Pinkoi" href="http://www.pinkoi.com/store/dotted" id="pinkoi-link" class="buy-link">
+						@endif
+						@if ($pinkoi_link != '')
+						<li class="pull-left margin-right-10"><a target="_blank" title="Pinkoi" href="{{ $pinkoi_link }}" id="pinkoi-link" class="buy-link">
 							<img src="{{ asset('img/index/where-to-buy-Pinkoi.jpg') }}">
 						</a></li>
+						@endif
 					</ul>
 				</div>
 			</div>

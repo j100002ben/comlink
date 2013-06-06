@@ -61,6 +61,9 @@
 						2013.06 第一波商品全面開始銷售</p>
 				</div>
 				<div class="margin-bottom-40">
+					<p><img src="{{ asset('img/brand/dott-life.jpg') }}" ></p>
+				</div>
+				<div class="margin-bottom-40">
 					<h4 id="about-comlink4">附點生活</h4>
 					<p>附點生活是附點品牌成立的粉絲團，<br>
 						一開始透過圖文的方式讓大家認識我們，<br>

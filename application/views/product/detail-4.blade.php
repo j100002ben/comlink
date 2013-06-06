@@ -5,6 +5,9 @@
 @endsection
 
 <?php
+$pchome_link = 'http://www.pcstore.com.tw/comlinktek/M13813072.htm';
+$pinkoi_link = 'http://www.pinkoi.com/product/1a-lfhxx';
+
 if( rawurldecode($product_name) == '130℃環保筷' )
 	$link_name = '130c';
 else
@@ -52,12 +55,16 @@ else
 				<div class="clearfix">
 					<span>where to buy</span>
 					<ul class="unstyled">
-						<li class="pull-left margin-right-10"><a title="PcHome" href="http://www.pcstore.com.tw/comlinktek/" id="pchome-link" class="buy-link">
+						@if ($pchome_link != '')
+						<li class="pull-left margin-right-10"><a target="_blank" title="PcHome" href="{{ $pchome_link }}" id="pchome-link" class="buy-link">
 							<img src="{{ asset('img/index/where-to-buy-PChome.jpg') }}">
 						</a></li>
-						<li class="pull-left margin-right-10"><a title="Pinkoi" href="http://www.pinkoi.com/store/dotted" id="pinkoi-link" class="buy-link">
+						@endif
+						@if ($pinkoi_link != '')
+						<li class="pull-left margin-right-10"><a target="_blank" title="Pinkoi" href="{{ $pinkoi_link }}" id="pinkoi-link" class="buy-link">
 							<img src="{{ asset('img/index/where-to-buy-Pinkoi.jpg') }}">
 						</a></li>
+						@endif
 					</ul>
 				</div>
 			</div>
