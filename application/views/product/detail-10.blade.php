@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-產品介紹
+附點 冰中劍 - Comlink
 @endsection
 
 <?php

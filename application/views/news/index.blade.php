@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-最新消息
+最新消息 - Comlink
 @endsection
 
 @section('content')

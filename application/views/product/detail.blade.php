@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-關於康利金
+附點生活 130℃環保筷 - Comlink
 @endsection
 
 <?php

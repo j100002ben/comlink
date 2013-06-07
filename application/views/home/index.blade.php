@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-首頁
+Comlink - Creat dreams and sensation !
 @endsection
 
 @section('content')

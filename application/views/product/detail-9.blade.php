@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-產品介紹
+附點生活 馬克杯 - Comlink
 @endsection
 
 <?php

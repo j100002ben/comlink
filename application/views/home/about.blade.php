@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-關於康利金
+關於康利金 - Comlink
 @endsection
 
 @section('content')

@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-購買通路
+購買通路 - Comlink
 @endsection
 
 @section('content')

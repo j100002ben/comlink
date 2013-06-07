@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-附點-角色介紹
+附點角色介紹 - Comlink
 @endsection
 
 @section('content')

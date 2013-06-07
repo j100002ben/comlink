@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-附點品牌
+附點品牌 - Comlink
 @endsection
 
 @section('content')

@@ -1,7 +1,7 @@
 @layout('layouts.index')
 
 @section('head-title')
-聯絡我們
+聯絡我們 - Comlink
 @endsection
 
 @section('content')

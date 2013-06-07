@@ -24,8 +24,8 @@
 $environments = array(
 
 	'local' => array('http://localhost*', '*.dev', '*.local'),
-  'stage' => array('*.clients.poka.tw'),
-  'production' => array('*.comlinktek.com', '54.250.133.32'),
+	'stage' => array('*.clients.poka.tw'),
+	'production' => array('*.comlinktek.com', '54.250.133.32'),
 
 );
 
