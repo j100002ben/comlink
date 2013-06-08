@@ -27,57 +27,47 @@
 				<div class="span9">
 					<ul id="top-menu" class="unstyled clearfix">
 						<li class="pull-left">
-							<div class="nav-item">
-								<div class="nav-item-triangle"></div>
-								<div class="nav-item-bg menu-brand"></div>
-								<div class="nav-item-link">
-									<a href="{{ route('dott_brand') }}">
-										品牌介紹<span>Brand</span>
-									</a>
+							<a href="{{ route('dott_brand') }}">
+								<div class="nav-item">
+									<div class="nav-item-triangle"></div>
+									<div class="nav-item-bg menu-brand"></div>
+									<div class="nav-item-link">品牌介紹<span>Brand</span></div>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="pull-left">
-							<div class="nav-item">
-								<div class="nav-item-triangle"></div>
-								<div class="nav-item-bg menu-product"></div>
-								<div class="nav-item-link">
-									<a href="{{ route('product') }}">
-										產品介紹<span>Product</span>
-									</a>
+							<a href="{{ route('product') }}">
+								<div class="nav-item">
+									<div class="nav-item-triangle"></div>
+									<div class="nav-item-bg menu-product"></div>
+									<div class="nav-item-link">產品介紹<span>Product</span></div>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="pull-left">
-							<div class="nav-item">
-								<div class="nav-item-triangle"></div>
-								<div class="nav-item-bg menu-news"></div>
-								<div class="nav-item-link">
-									<a href="{{ route('news') }}">
-										最新消息<span>News</span>
-									</a>
+							<a href="{{ route('news') }}">
+								<div class="nav-item">
+									<div class="nav-item-triangle"></div>
+									<div class="nav-item-bg menu-news"></div>
+									<div class="nav-item-link">最新消息<span>News</span></div>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="pull-left">
-							<div class="nav-item">
-								<div class="nav-item-triangle"></div>
-								<div class="nav-item-bg menu-buy"></div>
-								<div class="nav-item-link">
-									<a href="{{ route('buy') }}">
-										購買通路<span>Buy</span>
-									</a>
+							<a href="{{ route('buy') }}">
+								<div class="nav-item">
+									<div class="nav-item-triangle"></div>
+									<div class="nav-item-bg menu-buy"></div>
+									<div class="nav-item-link">購買通路<span>Buy</span></div>
 								</div>
-							</div>
+							</a>
 						</li>
 						<li class="pull-left">
-							<div class="nav-item">
-								<div class="nav-item-triangle"></div>
-								<div class="nav-item-bg menu-contact"></div>
-								<div class="nav-item-link">
-									<a href="{{ route('contact') }}">
-										聯絡我們<span>Contact</span>
-									</a>
+							<a href="{{ route('contact') }}">
+								<div class="nav-item">
+									<div class="nav-item-triangle"></div>
+									<div class="nav-item-bg menu-contact"></div>
+									<div class="nav-item-link">聯絡我們<span>Contact</span></div>
 								</div>
 							</a>
 						</li>
