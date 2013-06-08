@@ -27,28 +27,58 @@
 				<div class="span9">
 					<ul id="top-menu" class="unstyled clearfix">
 						<li class="pull-left">
-							<a href="{{ route('dott_brand') }}" class="nav-item">
-								品牌介紹<span>Brand</span>
-							</a>
+							<div class="nav-item">
+								<div class="nav-item-triangle"></div>
+								<div class="nav-item-bg menu-brand"></div>
+								<div class="nav-item-link">
+									<a href="{{ route('dott_brand') }}">
+										品牌介紹<span>Brand</span>
+									</a>
+								</div>
+							</div>
 						</li>
 						<li class="pull-left">
-							<a href="{{ route('product') }}" class="nav-item">
-								產品介紹<span>Product</span>
-							</a>
+							<div class="nav-item">
+								<div class="nav-item-triangle"></div>
+								<div class="nav-item-bg menu-product"></div>
+								<div class="nav-item-link">
+									<a href="{{ route('product') }}">
+										產品介紹<span>Product</span>
+									</a>
+								</div>
+							</div>
 						</li>
 						<li class="pull-left">
-							<a href="{{ route('news') }}" class="nav-item">
-								最新消息<span>News</span>
-							</a>
+							<div class="nav-item">
+								<div class="nav-item-triangle"></div>
+								<div class="nav-item-bg menu-news"></div>
+								<div class="nav-item-link">
+									<a href="{{ route('news') }}">
+										最新消息<span>News</span>
+									</a>
+								</div>
+							</div>
 						</li>
 						<li class="pull-left">
-							<a href="{{ route('buy') }}" class="nav-item">
-								購買通路<span>Buy</span>
-							</a>
+							<div class="nav-item">
+								<div class="nav-item-triangle"></div>
+								<div class="nav-item-bg menu-buy"></div>
+								<div class="nav-item-link">
+									<a href="{{ route('buy') }}">
+										購買通路<span>Buy</span>
+									</a>
+								</div>
+							</div>
 						</li>
 						<li class="pull-left">
-							<a href="{{ route('contact') }}" class="nav-item">
-								聯絡我們<span>Contact</span>
+							<div class="nav-item">
+								<div class="nav-item-triangle"></div>
+								<div class="nav-item-bg menu-contact"></div>
+								<div class="nav-item-link">
+									<a href="{{ route('contact') }}">
+										聯絡我們<span>Contact</span>
+									</a>
+								</div>
 							</a>
 						</li>
 					</ul>

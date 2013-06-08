@@ -102,15 +102,7 @@ a:hover, a:active{
 .contact-content-div{
 	
 }
-.nav-item{
-	display: block;
-	text-align: center;
-	margin: 40px 42px 0px;
-}
 
-.nav-item span{
-	display: block;
-}
 .logo-div{
 	position: relative;
 	margin-top: 10px;
@@ -330,21 +322,74 @@ a:hover, a:active{
 	
 }
 #top-menu {
-	background: url(../img/menu.png) scroll no-repeat 44px 7px;
 	padding-left: 44px;
 }
 #top-menu li {
 	
 }
 #top-menu a {
-	padding-top: 40px;
+}
+#top-menu li:first-child .nav-item {
+	margin-left: 0px;
+}
+
+.nav-item{
+	position: relative;
+	margin: 20px 0px 0px 65px;
+	width: 76px;
+	height: 102px;
+}
+.nav-item-triangle{
+	background: transparent url(../img/menu-triangle.png) scroll no-repeat 50% 50%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	width: 15px;
+	height: 14px;
+}
+.nav-item-bg{
+	top: 0px;
+	right: 0px;
+	position: absolute;
+}
+
+.menu-brand{
+	background: transparent url(../img/menu_brand.png) scroll no-repeat 50% 50%;
+	width: 35px;
+	height: 59px;
+}
+.menu-buy{
+	background: transparent url(../img/menu_buy.png) scroll no-repeat 50% 50%;
+	width: 49px;
+	height: 58px;
+}
+.menu-product{
+	background: transparent url(../img/menu_product.png) scroll no-repeat 50% 50%;
+	width: 39px;
+	height: 59px;
+}
+.menu-news{
+	background: transparent url(../img/menu_news.png) scroll no-repeat 50% 50%;
+	width: 52px;
+	height: 48px;
+}
+.menu-contact{
+	background: transparent url(../img/menu_contact_us.png) scroll no-repeat 50% 50%;
+	width: 52px;
+	height: 36px;
+}
+.nav-item-link{
+	display: block;
+	text-align: center;
 	font-size: 1.4em;
-	margin: 30px 0 0 45px;
-	width: 90px;
+	position: absolute;
+	bottom: 0px;
 }
-#top-menu li:first-child a {
-	margin-left: 0;
+
+.nav-item-link span{
+	display: block;
 }
+
 #product-spot {
 	position: relative;
 	height: 460px;
@@ -375,5 +420,6 @@ a:hover, a:active{
 }
 .container {
 	padding: 0 40px;
-	background: #FFF
+	background: #FFF;
+	height: 100%;
 }
