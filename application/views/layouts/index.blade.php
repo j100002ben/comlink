@@ -16,77 +16,94 @@
 	{{ HTML::style('css/style.css') }}
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	{{ HTML::script('bundles/bootstrapper/js/bootstrap.min.js') }}
+	<script>
+		;"use strict";
+		(function(window, undefined){
+		var document = window.document
+		, $ = window.jQuery
+		, resizeWindow = function(){
+		var $container = $('.container');
+			$container.height($container[0].scrollHeight);
+		};
+		$(function(){
+		$(window).resize(resizeWindow);
+			resizeWindow();
+		});
+		})(this);
+	</script>
 </head>
 <body>
 	<div class="container">
-		<div class="header">
-			<div class="row">
-				<div class="span3 logo-div">
-					<h1><a href="{{ url('') }}" class="logo-link"><span>Comlink</span></a></h1>
-				</div>
-				<div class="span9">
-					<ul id="top-menu" class="unstyled clearfix">
-						<li class="pull-left">
-							<a href="{{ route('dott_brand') }}">
-								<div class="nav-item">
-									<div class="nav-item-triangle"></div>
-									<div class="nav-item-bg menu-brand"></div>
-									<div class="nav-item-link">品牌介紹<span>Brand</span></div>
-								</div>
-							</a>
-						</li>
-						<li class="pull-left">
-							<a href="{{ route('product') }}">
-								<div class="nav-item">
-									<div class="nav-item-triangle"></div>
-									<div class="nav-item-bg menu-product"></div>
-									<div class="nav-item-link">產品介紹<span>Product</span></div>
-								</div>
-							</a>
-						</li>
-						<li class="pull-left">
-							<a href="{{ route('news') }}">
-								<div class="nav-item">
-									<div class="nav-item-triangle"></div>
-									<div class="nav-item-bg menu-news"></div>
-									<div class="nav-item-link">最新消息<span>News</span></div>
-								</div>
-							</a>
-						</li>
-						<li class="pull-left">
-							<a href="{{ route('buy') }}">
-								<div class="nav-item">
-									<div class="nav-item-triangle"></div>
-									<div class="nav-item-bg menu-buy"></div>
-									<div class="nav-item-link">購買通路<span>Buy</span></div>
-								</div>
-							</a>
-						</li>
-						<li class="pull-left">
-							<a href="{{ route('contact') }}">
-								<div class="nav-item">
-									<div class="nav-item-triangle"></div>
-									<div class="nav-item-bg menu-contact"></div>
-									<div class="nav-item-link">聯絡我們<span>Contact</span></div>
-								</div>
-							</a>
-						</li>
-					</ul>
+		<div class="container-inner">
+			<div class="header">
+				<div class="row">
+					<div class="span3 logo-div">
+						<h1><a href="{{ url('') }}" class="logo-link"><span>Comlink</span></a></h1>
+					</div>
+					<div class="span9">
+						<ul id="top-menu" class="unstyled clearfix">
+							<li class="pull-left">
+								<a href="{{ route('dott_brand') }}">
+									<div class="nav-item">
+										<div class="nav-item-triangle"></div>
+										<div class="nav-item-bg menu-brand"></div>
+										<div class="nav-item-link">品牌介紹<span>Brand</span></div>
+									</div>
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="{{ route('product') }}">
+									<div class="nav-item">
+										<div class="nav-item-triangle"></div>
+										<div class="nav-item-bg menu-product"></div>
+										<div class="nav-item-link">產品介紹<span>Product</span></div>
+									</div>
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="{{ route('news') }}">
+									<div class="nav-item">
+										<div class="nav-item-triangle"></div>
+										<div class="nav-item-bg menu-news"></div>
+										<div class="nav-item-link">最新消息<span>News</span></div>
+									</div>
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="{{ route('buy') }}">
+									<div class="nav-item">
+										<div class="nav-item-triangle"></div>
+										<div class="nav-item-bg menu-buy"></div>
+										<div class="nav-item-link">購買通路<span>Buy</span></div>
+									</div>
+								</a>
+							</li>
+							<li class="pull-left">
+								<a href="{{ route('contact') }}">
+									<div class="nav-item">
+										<div class="nav-item-triangle"></div>
+										<div class="nav-item-bg menu-contact"></div>
+										<div class="nav-item-link">聯絡我們<span>Contact</span></div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		@yield('content')
-		<div class="footer clearfix">
-			<div class="row">
-				<div class="span6">
-					Comlink Trading Development Co., Ltd.<br>
-					+886-02-25452535<br>
-					service@comlinktek.com
-				</div>
-				<div class="span4 offset2 text-right">
-					<br>
-					2013 Comlink &copy;<br>
-					All Rights Reserved.
+			@yield('content')
+			<div class="footer clearfix">
+				<div class="row">
+					<div class="span6">
+						Comlink Trading Development Co., Ltd.<br>
+						+886-02-25452535<br>
+						service@comlinktek.com
+					</div>
+					<div class="span4 offset2 text-right">
+						<br>
+						2013 Comlink &copy;<br>
+						All Rights Reserved.
+					</div>
 				</div>
 			</div>
 		</div>
