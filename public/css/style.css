@@ -326,7 +326,7 @@ a:hover, a:active{
 	
 }
 #top-menu {
-	padding-left: 44px;
+	padding: 44px 0 0 44px;
 }
 #top-menu li {
 	
@@ -339,9 +339,9 @@ a:hover, a:active{
 
 .nav-item{
 	position: relative;
-	margin: 20px 0px 0px 65px;
+	margin: 0 0 0 65px;
 	width: 76px;
-	height: 102px;
+	height: 70px;
 }
 .nav-item-triangle{
 	background: transparent url(../img/menu-triangle.png) scroll no-repeat 50% 50%;
@@ -352,7 +352,7 @@ a:hover, a:active{
 	height: 14px;
 }
 .nav-item-bg{
-	top: 0px;
+	bottom: 45px;
 	right: 0px;
 	position: absolute;
 }
@@ -385,9 +385,11 @@ a:hover, a:active{
 .nav-item-link{
 	display: block;
 	text-align: center;
-	font-size: 1.4em;
-	position: absolute;
-	bottom: 0px;
+	font-size: 15px;
+	position: relative;
+	font-family: Arial;
+	font-weight: bold;
+	padding-top: 36px;
 }
 
 .nav-item-link span{
