@@ -64,7 +64,8 @@ a:hover, a:active{
 	margin-right: -1px;
 }
 .footer{
-	margin: 20px 0 10px;
+	margin: 20px 0 0;
+	padding-bottom: 10px;
 	font-size: 12px;
 }
 .table-separate{
