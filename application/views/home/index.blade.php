@@ -52,9 +52,4 @@ Comlink - Creat dreams and sensation !
 	</div>
 </div>
 <hr class="dashed-hr"></hr>
-<script>
-"use strict";
-(function(c){var b=c.jQuery,d=b(".container"),a=function(){var a=b(c.document.body).height();
-a>d.height()?d.height(a):d.css("height","auto")};b(function(){b(c).resize(a);a()})})(this);
-</script>
 @endsection

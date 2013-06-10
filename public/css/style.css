@@ -1,5 +1,5 @@
 html{
-
+	height: 100%;
 }
 body{
 	font-size: 13px;
@@ -427,6 +427,7 @@ a:hover, a:active{
 .container {
 	padding: 0 40px;
 	background: #FFF;
+	height: 100%;
 }
 .carousel-caption {
 	background: #333;
