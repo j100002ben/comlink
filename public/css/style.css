@@ -64,7 +64,7 @@ a:hover, a:active{
 	margin-right: -1px;
 }
 .footer{
-	margin: 20px 0;
+	margin: 20px 0 10px;
 	font-size: 12px;
 }
 .table-separate{
@@ -427,5 +427,8 @@ a:hover, a:active{
 .container {
 	padding: 0 40px;
 	background: #FFF;
-	height: 100%;
+}
+.carousel-caption {
+	background: #333;
+	background: rgba(0,0,0,0.5);
 }
