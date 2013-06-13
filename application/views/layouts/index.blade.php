@@ -17,22 +17,21 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	{{ HTML::script('bundles/bootstrapper/js/bootstrap.min.js') }}
 	<script>
-		"use strict";
 		(function(window){
 			var $ = window.jQuery;
 			$(function(){
 				var $container = $('.container')
 				  , resize = function(){
+				  		console.log('resize');
 						if( $(window.document.body).height() < $container[0].scrollHeight ){
-							$container.height( $container[0].scrollHeight );
+							$container.css('height','auto');
 						}else{
 							$container.css('height','100%');
 						}
 					}
 				  ;
-				$(window).resize(resize).on('load',function(){
-					resize();
-				});
+				$(window).resize(resize).load(resize);
+				resize();
 			});
 		})(this);
 	</script>
